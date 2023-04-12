@@ -16,7 +16,7 @@ router.get("/:id", logMiddleware, getTask);
 
 router.put("/:id", upDateTask);
 
-router.post("/", postTask);
+router.post("/create", postTask);
 
 router.delete("/:id", deleteTask);
 

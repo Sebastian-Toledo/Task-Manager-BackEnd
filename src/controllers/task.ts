@@ -41,8 +41,6 @@ const upDateTask = async ({ params, body }: Request, res: Response) => {
 const postTask = async ({ body }: Request, res: Response) => {
   //?name=Model z&color=gray&year=2023&gas=electric&description=el mejor autito&price=25700
   //console.log(req.query);
-  console.log(body);
-
   try {
     const responseTask = await insertOrder(body);
     res.send(responseTask);

@@ -14,4 +14,4 @@ app.use(bodyParser.json());
 app.use(router);
 db().then(() => console.log("Conexion Ready"));
 
-app.listen(PORT, () => console.log(`levantado en el puesto ${PORT}`));
+app.listen(PORT);

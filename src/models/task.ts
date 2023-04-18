@@ -37,7 +37,7 @@ const TasksSchema = new Schema<Order>(
     },
     stateOrder: {
       type: String,
-      enum: ["In Process", "Finished", "Delivered", "Annulled"],
+      enum: ["In Process", "Finished", "Delivered", "Canceled"],
       required: true,
     },
     comment: {

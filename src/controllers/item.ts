@@ -31,8 +31,6 @@ const upDateItem = (req: Request, res: Response) => {
 };
 
 const postItem = async ({ body }: Request, res: Response) => {
-  console.log(body);
-
   try {
     const responseItem = await insertCar(body);
     res.send(responseItem);

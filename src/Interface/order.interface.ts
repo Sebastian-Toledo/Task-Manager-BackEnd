@@ -5,12 +5,20 @@ export interface Order {
   estimatedTime: number;
   description: string;
   deadLine: Date;
-  employee: string;
+  employee: "Ilay" | "Vero" | "Gabi" | "Dario" | "Flor" | "Fran";
   budget: number;
-  stateOrder: "In Process" | "Finished" | "Delivered" | "Annulled";
+  stateOrder:
+    | "In Process"
+    | "Finished"
+    | "Delivered"
+    | "Canceled"
+    | "En Proceso"
+    | "Terminados"
+    | "Entregados"
+    | "Anulados";
   comment?: string;
   dateChange?: Date;
-  employeeCharge?: string;
+  employeeCharge?: "Ilay" | "Vero" | "Gabi" | "Dario" | "Flor" | "Fran";
   cashAdvance: number;
   phone: number;
 }

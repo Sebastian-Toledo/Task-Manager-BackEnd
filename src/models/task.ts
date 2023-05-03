@@ -29,6 +29,7 @@ const TasksSchema = new Schema<Order>(
     },
     employee: {
       type: String,
+      enum: ["Ilay", "Vero", "Gabi", "Dario", "Flor", "Fran"],
       required: true,
     },
     budget: {
@@ -37,7 +38,16 @@ const TasksSchema = new Schema<Order>(
     },
     stateOrder: {
       type: String,
-      enum: ["In Process", "Finished", "Delivered", "Canceled"],
+      enum: [
+        "In Process",
+        "Finished",
+        "Delivered",
+        "Canceled",
+        "En Proceso",
+        "Terminados",
+        "Entregados",
+        "Anulados",
+      ],
       required: true,
     },
     comment: {
@@ -47,6 +57,7 @@ const TasksSchema = new Schema<Order>(
       type: Date,
     },
     employeeCharge: {
+      enum: ["Ilay", "Vero", "Gabi", "Dario", "Flor", "Fran"],
       type: String,
     },
     cashAdvance: {

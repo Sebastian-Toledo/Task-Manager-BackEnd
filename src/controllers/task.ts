@@ -7,7 +7,6 @@ import {
   updateOrder,
   deleatOrder,
 } from "../services/task";
-import { Order } from "../Interface/order.interface";
 
 const getTask = async ({ params }: Request, res: Response) => {
   try {

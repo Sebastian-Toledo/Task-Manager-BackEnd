@@ -20,5 +20,5 @@ export interface Order {
   dateChange?: Date;
   employeeCharge?: "Ilay" | "Vero" | "Gabi" | "Dario" | "Flor" | "Fran";
   cashAdvance: number;
-  phone: number;
+  phone: string;
 }

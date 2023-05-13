@@ -65,7 +65,7 @@ const TasksSchema = new Schema<Order>(
       required: true,
     },
     phone: {
-      type: Number,
+      type: String,
       required: true,
     },
   },

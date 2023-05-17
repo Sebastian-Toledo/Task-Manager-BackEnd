@@ -1,7 +1,7 @@
 export interface Modify {
   description: String;
-  previousDate: Date;
   comment: String;
-  dateChange: Date;
+  dateChange: String;
+  previewDate: String;
   employeeCharge: "Ilay" | "Vero" | "Gabi" | "Dario" | "Flor" | "Fran";
 }

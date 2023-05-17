@@ -12,7 +12,7 @@ const router = Router();
 
 router.get("/", getModifyTasks);
 
-router.get("/:id", logMiddleware, getModifyTask);
+router.get("/:id", getModifyTask);
 
 router.put("/:id", upDateModifyTask);
 

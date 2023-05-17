@@ -1,3 +1,5 @@
+import { Modify } from "./modify.interface";
+
 export interface Order {
   title: string;
   author: string;
@@ -16,9 +18,7 @@ export interface Order {
     | "Terminados"
     | "Entregados"
     | "Anulados";
-  comment?: string;
-  dateChange?: Date;
-  employeeCharge?: "Ilay" | "Vero" | "Gabi" | "Dario" | "Flor" | "Fran";
   cashAdvance: number;
   phone: string;
+  modify: Modify[];
 }

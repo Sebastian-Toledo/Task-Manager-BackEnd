@@ -1,6 +1,7 @@
-import { Schema, model } from "mongoose";
+import mongoose from "mongoose";
 import { Modify } from "../Interface/modify.interface";
-import TaskModel from "./task";
+
+const { Schema, model } = mongoose;
 
 const ModifySchema = new Schema<Modify>(
   {
@@ -8,16 +9,16 @@ const ModifySchema = new Schema<Modify>(
       type: String,
       required: true,
     },
-    previousDate: {
-      type: Date,
-      required: true,
-    },
     comment: {
       type: String,
       required: true,
     },
     dateChange: {
-      type: Date,
+      type: String,
+      required: true,
+    },
+    previewDate: {
+      type: String,
       required: true,
     },
     employeeCharge: {

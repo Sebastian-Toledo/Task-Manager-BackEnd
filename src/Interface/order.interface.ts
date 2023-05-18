@@ -20,5 +20,9 @@ export interface Order {
     | "Anulados";
   cashAdvance: number;
   phone: string;
+  changeDeadLine?: Date;
+  comment?: string;
+  employeeCharge?: "Ilay" | "Vero" | "Gabi" | "Dario" | "Flor" | "Fran";
+  previewDate?: Date;
   modify: Modify[];
 }

@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import { Order } from "../Interface/order.interface";
+import ModifyModel from "./modifyTask";
 
 const { Schema, model } = mongoose;
 
@@ -60,11 +61,23 @@ const TasksSchema = new Schema<Order>(
       type: String,
       required: true,
     },
+    changeDeadLine: {
+      type: Date,
+    },
+    comment: {
+      type: String,
+    },
+    employeeCharge: {
+      type: String,
+      enum: ["Ilay", "Vero", "Gabi", "Dario", "Flor", "Fran"],
+    },
+    previewDate: {
+      type: Date,
+    },
     modify: [
       {
-        type: Schema.Types.Array,
+        type: ModifyModel.schema,
         ref: "Modify",
-        default: [],
       },
     ],
   },

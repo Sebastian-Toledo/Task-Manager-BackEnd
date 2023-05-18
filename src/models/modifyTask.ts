@@ -34,5 +34,5 @@ const ModifySchema = new Schema<Modify>(
 );
 
 const ModifyModel = model("Modify", ModifySchema);
-
+ModifyModel.schema;
 export default ModifyModel;
